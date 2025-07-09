@@ -246,3 +246,49 @@ footer {
   color: #25d366;
   font-weight: bold;
 }
+
+.testimonials {
+  display: grid;
+  gap: 20px;
+}
+
+.testimonial {
+  background: #f8faff;
+  border-left: 5px solid #003366;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.testimonial p {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  color: #003366;
+  font-size: 14px;
+}
+
+
+.director-box {
+  margin-top: 30px;
+  padding: 15px;
+  background: #f0f4ff;
+  border-left: 5px solid #003366;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.director-box h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #003366;
+}
+
+.director-box p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #222;
+}
