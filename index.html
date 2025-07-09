@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cejocira Enterprises</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Cejocira Enterprises</div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- Sidebar Menu -->
+  <div class="sidebar-menu" id="sidebar-menu">
+    <div class="close-btn" id="close-btn">×</div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#offerings">What We Offer</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Choose Us</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#faqs">FAQs</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <h1>Welcome to Cejocira Enterprises</h1>
+    <p>Reliable Procurement & Office Solutions Across Kenya</p>
+    <a href="#contact" class="btn primary">Get in Touch</a>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>Cejocira Enterprises is a licensed general supplies company based in Nairobi. We serve schools, institutions, and businesses across Kenya with professionalism and commitment.</p>
+  </section>
+
+  <!-- What We Offer -->
+ <section id="offerings" class="section">
+  <h2>What We Offer</h2>
+
+  <!-- Office Stationery -->
+  <section id="offerings" class="section">
+  <h2 class="section-title">What We Offer</h2>
+  <div class="offerings-grid">
+
+    <!-- Stationery -->
+    <div class="offering-card">
+      <h3>📦 Office Stationery</h3>
+      <p>We supply essential office stationery, including:</p>
+      <ul>
+        <li>Pens (ballpoint, gel, markers)</li>
+        <li>Notebooks, exercise books</li>
+        <li>Files, folders, envelopes</li>
+        <li>Sticky notes, index tabs</li>
+        <li>Staplers, clips, glues</li>
+        <li>Planners, diaries, calendars</li>
+      </ul>
+    </div>
+
+    <!-- Printing -->
+    <div class="offering-card">
+      <h3>🖨️ Printing Services</h3>
+      <p>High-quality printing for:</p>
+      <ul>
+        <li>Exams, booklets, and proposals</li>
+        <li>Flyers, brochures, invoices</li>
+        <li>Lamination, binding & photocopy</li>
+      </ul>
+    </div>
+
+    <!-- Branding -->
+    <div class="offering-card">
+      <h3>🎨 Branding</h3>
+      <p>Make your brand stand out with:</p>
+      <ul>
+        <li>Branded apparel and merchandise</li>
+        <li>Corporate gifts (mugs, pens)</li>
+        <li>Event branding & signage</li>
+      </ul>
+    </div>
+
+    <!-- Repairs -->
+    <div class="offering-card">
+      <h3>🛠️ Equipment Repairs</h3>
+      <p>Maintenance and repairs for:</p>
+      <ul>
+        <li>Printers, copiers, and scanners</li>
+        <li>Laptops, keyboards, and mice</li>
+        <li>Basic diagnosis & setup support</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Branding Services -->
+  
+  <!-- Why Choose Us -->
+  <section id="why" class="section">
+    <h2>Why Choose Us</h2>
+    <div class="card"><p>✔ Trusted and registered supplier</p></div>
+    <div class="card"><p>✔ Efficient customer service</p></div>
+    <div class="card"><p>✔ Affordable, transparent pricing</p></div>
+    <div class="card"><p>✔ Professional team</p></div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section">
+    <h2>What Our Clients Say</h2>
+    <div class="card"><p>“They printed our exams perfectly and delivered on time.” — Mr. Kamau</p></div>
+    <div class="card"><p>“We get all our branding done through Cejocira.” — Janet Achieng’</p></div>
+    <div class="card"><p>“Very responsive and reliable supplier.” — Kevin Otieno</p></div>
+  </section>
+
+  <!-- FAQs -->
+  <section id="faqs" class="section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="card"><h3>Do you deliver nationwide?</h3><p>Yes, we deliver anywhere in Kenya.</p></div>
+    <div class="card"><h3>Do you offer bulk discounts?</h3><p>Yes, especially for institutions and repeat customers.</p></div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Phone: 0719 215 307</p>
+    <p>Email: cellinsimiyu@gmail.com</p>
+    <div class="contact-buttons">
+      <a href="tel:+254719215307" class="call">📞 Call</a>
+      <a href="https://wa.me/254719215307" class="whatsapp">💬 WhatsApp</a>
+      <a href="mailto:cellinsimiyu@gmail.com" class="email">✉️ Email</a>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section id="location" class="section">
+    <h2>Our Location</h2>
+    <p>P.O. Box 1080 - 00200 Nairobi, Kenya</p>
+    <p>We operate from Nairobi but serve clients countrywide.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Cejocira Enterprises. All rights reserved.</p>
+  </footer>
+<!-- JavaScript -->
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const sidebarMenu = document.getElementById("sidebar-menu");
+  const closeBtn = document.getElementById("close-btn");
+
+  // Show menu when hamburger is clicked
+  hamburger.addEventListener("click", () => {
+    sidebarMenu.classList.add("show");
+  });
+
+  // Hide menu when close button is clicked
+  closeBtn.addEventListener("click", () => {
+    sidebarMenu.classList.remove("show");
+  });
+
+  // Hide menu when a sidebar link is clicked
+  document.querySelectorAll(".sidebar-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      sidebarMenu.classList.remove("show");
+    });
+  });
+</script>
+
+
+</body>
+</html>
