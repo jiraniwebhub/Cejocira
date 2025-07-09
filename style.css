@@ -292,3 +292,12 @@ footer {
   margin-top: 5px;
   color: #222;
 }
+
+#location p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+#location strong {
+  color: #003366;
+}
