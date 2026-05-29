@@ -210,10 +210,22 @@
   <script>
     const navToggle = document.getElementById('navToggle');
     const mainNav = document.getElementById('mainNav');
-    navToggle.addEventListener('click', () => {
+    const navLinks = mainNav.querySelectorAll('a');
+
+    const toggleNav = () => {
       const isOpen = mainNav.classList.toggle('nav-open');
       navToggle.classList.toggle('open', isOpen);
       navToggle.setAttribute('aria-expanded', String(!!isOpen));
+    };
+
+    navToggle.addEventListener('click', toggleNav);
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        if (mainNav.classList.contains('nav-open')) {
+          toggleNav();
+        }
+      });
     });
   </script>
 </body>

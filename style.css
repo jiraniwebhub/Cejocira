@@ -64,6 +64,7 @@ textarea {
   justify-content: space-between;
   gap: 1rem;
   padding: 18px 0;
+  position: relative;
 }
 
 .brand {
@@ -516,18 +517,21 @@ blockquote footer {
 @media (max-width: 768px) {
   .header-inner {
     flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 1rem 0;
   }
 
   .main-nav {
     position: absolute;
-    top: calc(100% + 8px);
-    left: 16px;
-    right: 16px;
+    top: calc(100% + 0.75rem);
+    left: 0;
+    right: 0;
     flex-direction: column;
     gap: 1rem;
     background: white;
     padding: 1.25rem;
-    border-radius: 16px;
+    border-radius: 18px;
     box-shadow: 0 16px 48px rgba(16, 74, 138, 0.16);
     opacity: 0;
     pointer-events: none;
@@ -538,7 +542,6 @@ blockquote footer {
   }
 
   .main-nav.nav-open {
-    display: flex;
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
@@ -550,10 +553,36 @@ blockquote footer {
 
   .main-nav a {
     font-size: 1rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(16, 74, 138, 0.08);
   }
 
   .hero {
     padding-top: 4rem;
+  }
+
+  .hero-content {
+    gap: 1.5rem;
+  }
+
+  .hero-card {
+    margin-top: 1.5rem;
+  }
+
+  .premium-grid {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+
+  .floating-whatsapp {
+    right: 0.75rem;
+    left: 0.75rem;
+    justify-content: center;
+    padding: 0.95rem 1rem;
+  }
+
+  .contact-actions .btn {
+    width: 100%;
+    min-width: auto;
   }
 }
 
@@ -566,10 +595,24 @@ blockquote footer {
     font-size: 2.4rem;
   }
 
-  .btn {
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
     width: 100%;
   }
+
+  .premium-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
+
 #location strong {
   color: #003366;
 }
