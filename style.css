@@ -109,6 +109,7 @@ textarea {
   background: var(--primary);
   border-radius: 999px;
   position: relative;
+  transition: background 0.2s ease, transform 0.25s ease;
 }
 
 .nav-toggle span::before,
@@ -128,6 +129,25 @@ textarea {
 
 .nav-toggle span::after {
   top: 7px;
+}
+
+.nav-toggle.open span {
+  background: transparent;
+}
+
+.nav-toggle.open span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.nav-toggle.open span::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.nav-toggle span::before,
+.nav-toggle span::after {
+  transition: transform 0.25s ease, top 0.25s ease;
 }
 
 .hero {
@@ -500,18 +520,21 @@ blockquote footer {
 
   .main-nav {
     position: absolute;
-    inset: 77px 16px 0 16px;
+    top: calc(100% + 8px);
+    left: 16px;
+    right: 16px;
     flex-direction: column;
     gap: 1rem;
     background: white;
-    padding: 1.5rem;
-    border-radius: 24px;
+    padding: 1.25rem;
+    border-radius: 16px;
     box-shadow: 0 16px 48px rgba(16, 74, 138, 0.16);
     opacity: 0;
     pointer-events: none;
-    transform: translateY(-10px);
+    transform: translateY(-8px);
     transition: opacity 0.25s ease, transform 0.25s ease;
-    display: none;
+    display: flex;
+    z-index: 110;
   }
 
   .main-nav.nav-open {
